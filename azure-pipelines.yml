@@ -7,7 +7,7 @@ pool:
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
-- script: mvn clean install
-  displayName: 'Build with Maven'  
-- script: java -jar target/MyGradleApp-1.0-SNAPSHOT.jar
-  displayName: 'Running jar'
+- script: gradle build
+  displayName: 'Build with gradle'  
+- script: gradle run
+  displayName: 'Running gradle application'
